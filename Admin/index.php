@@ -1,0 +1,89 @@
+<?php 
+
+session_start();
+
+if(!isset($_SESSION['adm_id']))
+{
+	
+	echo '<script type="text/javascript">alert("Login First");window.location=\'../adlogin.php\';</script>';
+die();
+}
+
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php include_once('title.php');?>
+<meta name="keywords" content="free website templates, CSS templates, download HTML page, templatemo.com" />
+<meta name="description" content="templatemo 004 - free CSS website template" />
+<link href="../templatemo_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../sliderman.1.3.8.js"></script>
+	<link rel="stylesheet" type="text/css" href="../sliderman.css" />
+</head>
+
+
+<body>
+
+<p style="margin-left:270px">
+<!-- <img  src="../images/rr.png"/> -->
+</p>
+<div id="templatemo_container">
+  <div class="templatemo_line"></div> 
+  <div id="templatemo_header">
+  
+  <?php include_once('slider.php');?>
+  
+  </div>
+  
+  
+  
+  <div class="templatemo_line"></div>    
+	
+    <div id="templatemo_content">
+    
+
+    <div id="templatemo_left_column">
+        <?php
+		include "Header.php";
+		?>
+
+   	  <div class="section_box">
+        <div class="subtitle">Staff Recruitment Portal (OGITECH)</div>
+         
+      </div>
+   	  <div class="text_area" align="justify">
+        <div class="subtitle">Quick Contact</div>
+          Tel: 000-000-0000<br />
+          Fax: 001-001-0011<br />
+          Email:ogitechigbesa@gmail.com <br />
+          <br />
+	  <div class="subtitle">Quick Contact</div>
+          Tel: 000-000-0000<br />
+          Fax: 001-001-0011<br />
+          Email:ogitechigbesa@gmail.com <br />
+          <br />
+      </div>
+    </div>
+      <div id="templatemo_right_column">
+   	 		<div class="text_area" align="justify">	
+            
+            
+            
+            
+	<div class="title">WELCOME ADMINISTRATOR</div>
+
+	<img src="images/admin2.jpg" title="Strawberry" width="100" height="86" class="templatemo_pic" />
+<!-- <marquee direction = "up">Welcome to the Administrator Page </marquee> -->
+ 		</div>   
+	</div>
+    </div>
+ 
+	<div id="templatemo_footer" align="center">
+  <?php include_once('footer.php');?></div></div></body>
+</html>
+
+		
+		
